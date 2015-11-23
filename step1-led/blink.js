@@ -8,9 +8,9 @@ myBoard.on("ready", function() {
   var yellowLED = new five.Led(13);
 
     /*Potientiometer*/
-    var pmeter = new five.Sensor("A0");
+    var diySensor = new five.Sensor("A0");
 
-    pmeter.on("change", function() {
+    diySensor.on("change", function() {
         // this.value will reflect a scaling from 0-1023 to 0-180
         console.log( this.value );
         greenLED.on();
