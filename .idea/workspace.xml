@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b129e1f5-15ab-4fd1-a0a8-7c39c58832ae" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/step1-led/hello_world.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/step1-led/blink.js" afterPath="$PROJECT_DIR$/step1-led/blink.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/step1-led/cheerful.js" afterPath="$PROJECT_DIR$/step1-led/cheerful.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/step1-led/cheerlights-colors.js" afterPath="$PROJECT_DIR$/step1-led/cheerlights-colors.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/step2-potentiometer/potentio.js" afterPath="$PROJECT_DIR$/step2-potentiometer/potentio.js" />
     </list>
     <ignored path="nodebots_nyc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,14 +36,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="control-led.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="control-led.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/step3-control-led/control-led.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.10186757">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="blink.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/step1-led/blink.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.43293718">
+              <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -60,9 +68,9 @@
       <list>
         <option value="$PROJECT_DIR$/step1-led/cheerlights-colors.js" />
         <option value="$PROJECT_DIR$/step1-led/cheerful.js" />
-        <option value="$PROJECT_DIR$/step1-led/blink.js" />
         <option value="$PROJECT_DIR$/step2-potentiometer/potentio.js" />
         <option value="$PROJECT_DIR$/step3-control-led/control-led.js" />
+        <option value="$PROJECT_DIR$/step1-led/blink.js" />
       </list>
     </option>
   </component>
@@ -218,14 +226,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/step1-led/blink.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10186757">
-          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/step1-led/cheerlights-colors.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.17826825">
@@ -258,11 +258,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/step3-control-led/control-led.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10186757">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/step1-led/blink.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43293718">
+          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
