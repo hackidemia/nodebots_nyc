@@ -4,7 +4,6 @@
 
 var request = require("request"),
     five = require("johnny-five"),
-    Spark = require("spark-io"),
     colorMap = require("./cheerlights-colors"),
     board,
     pins;
