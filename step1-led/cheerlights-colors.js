@@ -1,3 +1,7 @@
+/*
+ * https://github.com/Resseguie/Cheerful-J5/blob/master/cheerlights-colors.js
+ */
+
 var colors = {
     "red"       : "#ff0000",
     "green"     : "#00ff00",
