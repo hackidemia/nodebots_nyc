@@ -11,6 +11,6 @@
   "dependencies": {
     "express": "^4.13.3",
     "johnny-five": "^0.9.18",
-    "jquery": "^2.2.0",
+    "jquery": "^2.2.0"
   }
 }
