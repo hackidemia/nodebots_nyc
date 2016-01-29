@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Nodebots NYC</title>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { font: 13px Helvetica, Arial; }
+      .hide { display: none; }
+    </style>
+  </head>
+  <body>
+    <img id="start" src="start.png">
+    <img id="throw" class="hide" src="throw.gif">
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script>
+      var socket = io();
+      socket.on('explode', function(msg){
+        $('#start').addClass('hide');
+        $('#throw').removeClass('hide');
+      });
+      socket.on('restore', function(msg){
+        $('#throw').remove();
+        $('#start').removeClass('hide');
+
+        var timestamp = new Date().getTime();
+        var filename = 'throw.gif'+'?'+timestamp; // Prevent Browser Caching of gif
+        var img = $('<img />', {
+          id: 'throw',
+          class: 'hide',
+          src: filename,
+        });
+        img.appendTo($('body'));
+      });
+
+    </script>
+  </body>
+</html>
