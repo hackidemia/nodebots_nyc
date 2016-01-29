@@ -9,7 +9,7 @@ var app = express(),
 
 board.on("ready", function() {
   // Creates a piezo object and defines the pin to be used for the signal
-  piezo = new five.Piezo(3);
+  piezo = new j5.Piezo(3);
 
   // Injects the piezo into the repl
   board.repl.inject({
@@ -27,6 +27,9 @@ app.get('/', function(req, res) {
 });
 
 app.get('/button', function(req, res) {
+
+    //YOUR CODE HERE!
+
     //gets the note from the request's query string
     var note = req.query.note;
     console.log('note', note);

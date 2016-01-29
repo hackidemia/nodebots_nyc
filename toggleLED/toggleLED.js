@@ -24,5 +24,4 @@ app.get('/button', function(req, res) {
     console.log('pressed the button');
     led.toggle();
     res.end();
-
 });
