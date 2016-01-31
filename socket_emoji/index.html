@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Nodebots NYC</title>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { font: 13px Helvetica, Arial; }
+      h1 {text-align: center; padding-bottom: 10px;}
+      img {display: block; margin-left: auto; margin-right: auto;}
+      .hide { display: none; }
+      .big {width: 300px;}
+
+    </style>
+  </head>
+  <body>
+    <h1>Socket Emojis!</h1>
+    <img id="heart_eyes" src="heart_eyes.png">
+    <img id="pizza" src="pizza.png">
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script>
+      var socket = io();
+      socket.on('heart-big', function(msg){
+        $('#heart_eyes').addClass('big');
+      });
+      socket.on('heart-small', function(msg){
+        $('#heart_eyes').removeClass('big');
+      });
+
+      socket.on('pizza-big', function(msg){
+        $('#pizza').addClass('big');
+      });
+      socket.on('pizza-small', function(msg){
+        $('#pizza').removeClass('big');
+      });
+    </script>
+
+
+
+  </body>
+</html>
