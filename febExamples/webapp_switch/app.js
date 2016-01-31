@@ -13,7 +13,8 @@ var led;
 var state;
 
 app.get('/', function (req, res) {
-  res.render('index', state); //you would send state, but as an object
+  res.render('index', state); 
+  //sending the obj 'state' to the front-end
 });
 
 app.listen(3000, function () {

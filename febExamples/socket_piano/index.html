@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Nodebots NYC</title>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { font: 13px Helvetica, Arial; }
+      h1 {text-align: center; padding-bottom: 10px;}
+      img {display: block; margin-left: auto; margin-right: auto; margin-top: 30px;}
+      .highlight { background-color: rgba(0,0,255,0.2) }
+      .big {width: 300px;}
+      .key-rect {width: 51px; height: 241px; background-color: rgba(0,0,255,0.0); display: inline-block;}
+      #selection {margin: -241px auto; width: 435px;}
+
+    </style>
+  </head>
+  <body>
+    <br>
+    <h1>Socket Piano!</h1>
+    <img id="piano" src="piano-notes-and_keys.jpg">
+    <div id='selection'>
+      <div id='C' class="key-rect"></div>
+      <div id='D' class="key-rect"></div>
+      <div id='E' class="key-rect"></div>
+      <div id='F' class="key-rect"></div>
+      <div id='G' class="key-rect"></div>
+      <div id='A' class="key-rect"></div>
+      <div id='B' class="key-rect"></div>
+      <div id='C2' class="key-rect"></div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.1.10/buzz.min.js"></script>
+
+    <script>
+
+      var C = new buzz.sound( "040 - C.wav");
+      var D = new buzz.sound( "042 - D.wav");
+      var E = new buzz.sound( "044 - E.wav");
+      var F = new buzz.sound( "045 - F.wav");
+      var G = new buzz.sound( "047 - G.wav");
+      var A = new buzz.sound( "049 - A.wav");
+      var B = new buzz.sound( "051 - B.wav");
+      var C2 = new buzz.sound( "052 - C.wav");
+
+      var socket = io();
+
+      socket.on('Cpress', function(msg){
+        $('#C').addClass('highlight');
+        C.play();
+      });
+      socket.on('Crelease', function(msg){
+        $('#C').removeClass('highlight');
+      });
+      socket.on('Dpress', function(msg){
+        $('#D').addClass('highlight');
+        D.play();
+      });
+      socket.on('Drelease', function(msg){
+        $('#D').removeClass('highlight');
+      });
+      socket.on('Epress', function(msg){
+        $('#E').addClass('highlight');
+        E.play();
+      });
+      socket.on('Erelease', function(msg){
+        $('#E').removeClass('highlight');
+      });
+      socket.on('Fpress', function(msg){
+        $('#F').addClass('highlight');
+        F.play();
+      });
+      socket.on('Frelease', function(msg){
+        $('#F').removeClass('highlight');
+      });
+      socket.on('Gpress', function(msg){
+        $('#G').addClass('highlight');
+        G.play();
+      });
+      socket.on('Grelease', function(msg){
+        $('#G').removeClass('highlight');
+      });
+      socket.on('Apress', function(msg){
+        $('#A').addClass('highlight');
+        A.play();
+      });
+      socket.on('Arelease', function(msg){
+        $('#A').removeClass('highlight');
+      });
+      socket.on('Bpress', function(msg){
+        $('#B').addClass('highlight');
+        B.play();
+      });
+      socket.on('Brelease', function(msg){
+        $('#B').removeClass('highlight');
+      });
+      socket.on('C2press', function(msg){
+        $('#C2').addClass('highlight');
+        C2.play();
+      });
+      socket.on('C2release', function(msg){
+        $('#C2').removeClass('highlight');
+      });
+
+    </script>
+
+
+
+  </body>
+</html>
