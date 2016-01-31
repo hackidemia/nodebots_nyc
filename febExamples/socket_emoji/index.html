@@ -9,6 +9,7 @@
       img {display: block; margin-left: auto; margin-right: auto;}
       .hide { display: none; }
       .big {width: 300px;}
+      .tiny {width: 50px;}
 
     </style>
   </head>
@@ -16,6 +17,9 @@
     <h1>Socket Emojis!</h1>
     <img id="heart_eyes" src="heart_eyes.png">
     <img id="pizza" src="pizza.png">
+    <img id="fire" src="fire.png">
+    <img id="ghost" src="ghost.png">
+    <img id="lady" src="lady.png">
 
     <script src="/socket.io/socket.io.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
@@ -29,10 +33,10 @@
       });
 
       socket.on('pizza-big', function(msg){
-        $('#pizza').addClass('big');
+        $('#pizza').addClass('tiny');
       });
       socket.on('pizza-small', function(msg){
-        $('#pizza').removeClass('big');
+        $('#pizza').removeClass('tiny');
       });
     </script>
 
