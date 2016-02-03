@@ -1,0 +1,310 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'socket' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.3
+4 verbose install initial load of /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano/package.json
+5 verbose installManyTop reading scoped package data from /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano/node_modules/express/package.json
+6 verbose installManyTop reading scoped package data from /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano/node_modules/johnny-five/package.json
+7 verbose installManyTop reading scoped package data from /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano/node_modules/socket.io/package.json
+8 verbose readDependencies loading dependencies from /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano/package.json
+9 silly cache add args [ 'socket', null ]
+10 verbose cache add spec socket
+11 silly cache add parsed spec Result {
+11 silly cache add   raw: 'socket',
+11 silly cache add   scope: null,
+11 silly cache add   name: 'socket',
+11 silly cache add   rawSpec: '',
+11 silly cache add   spec: '*',
+11 silly cache add   type: 'range' }
+12 silly addNamed socket@*
+13 verbose addNamed "*" is a valid semver range for socket
+14 silly addNameRange { name: 'socket', range: '*', hasData: false }
+15 silly mapToRegistry name socket
+16 silly mapToRegistry using default registry
+17 silly mapToRegistry registry https://registry.npmjs.org/
+18 silly mapToRegistry uri https://registry.npmjs.org/socket
+19 verbose addNameRange registry:https://registry.npmjs.org/socket not in flight; fetching
+20 verbose request uri https://registry.npmjs.org/socket
+21 verbose request no auth needed
+22 info attempt registry request try #1 at 1:42:35 PM
+23 verbose request id 2450fc9fec57f87f
+24 verbose etag "368QAD6FWDSRRSF0K2VF00IA6"
+25 http request GET https://registry.npmjs.org/socket
+26 http 304 https://registry.npmjs.org/socket
+27 verbose headers { date: 'Wed, 03 Feb 2016 18:42:35 GMT',
+27 verbose headers   via: '1.1 varnish',
+27 verbose headers   'cache-control': 'max-age=300',
+27 verbose headers   etag: '"368QAD6FWDSRRSF0K2VF00IA6"',
+27 verbose headers   age: '0',
+27 verbose headers   connection: 'keep-alive',
+27 verbose headers   'x-served-by': 'cache-atl6232-ATL',
+27 verbose headers   'x-cache': 'MISS',
+27 verbose headers   'x-cache-hits': '0',
+27 verbose headers   'x-timer': 'S1454524955.372679,VS0,VE32',
+27 verbose headers   vary: 'Accept' }
+28 silly get cb [ 304,
+28 silly get   { date: 'Wed, 03 Feb 2016 18:42:35 GMT',
+28 silly get     via: '1.1 varnish',
+28 silly get     'cache-control': 'max-age=300',
+28 silly get     etag: '"368QAD6FWDSRRSF0K2VF00IA6"',
+28 silly get     age: '0',
+28 silly get     connection: 'keep-alive',
+28 silly get     'x-served-by': 'cache-atl6232-ATL',
+28 silly get     'x-cache': 'MISS',
+28 silly get     'x-cache-hits': '0',
+28 silly get     'x-timer': 'S1454524955.372679,VS0,VE32',
+28 silly get     vary: 'Accept' } ]
+29 verbose etag https://registry.npmjs.org/socket from cache
+30 verbose get saving socket to /Users/tyw/.npm/registry.npmjs.org/socket/.cache.json
+31 silly addNameRange number 2 { name: 'socket', range: '*', hasData: true }
+32 silly addNameRange versions [ 'socket', [ '0.0.1' ] ]
+33 silly addNamed socket@0.0.1
+34 verbose addNamed "0.0.1" is a plain semver version for socket
+35 silly cache afterAdd socket@0.0.1
+36 verbose afterAdd /Users/tyw/.npm/socket/0.0.1/package/package.json not in flight; writing
+37 verbose afterAdd /Users/tyw/.npm/socket/0.0.1/package/package.json written
+38 silly install resolved [ { name: 'socket',
+38 silly install resolved     description: 'Socket is a connect clone for simple socket based applications',
+38 silly install resolved     version: '0.0.1',
+38 silly install resolved     author:
+38 silly install resolved      { name: 'Richard S Allinson',
+38 silly install resolved        email: 'rsa@mounitainmansoftware.com' },
+38 silly install resolved     main: 'index',
+38 silly install resolved     engines: { node: '>= 0.6.0 < 0.7.0' },
+38 silly install resolved     dependencies: { microtime: '=0.2.0' },
+38 silly install resolved     repository: { type: 'git', url: 'git://github.com/capecodehq/socket.git' },
+38 silly install resolved     license: 'MIT',
+38 silly install resolved     _npmUser:
+38 silly install resolved      { name: 'mountainmansoftware',
+38 silly install resolved        email: 'npm@mountainmansoftware.com' },
+38 silly install resolved     _id: 'socket@0.0.1',
+38 silly install resolved     devDependencies: {},
+38 silly install resolved     optionalDependencies: {},
+38 silly install resolved     _engineSupported: true,
+38 silly install resolved     _npmVersion: '1.1.0-3',
+38 silly install resolved     _nodeVersion: 'v0.6.9',
+38 silly install resolved     _defaultsLoaded: true,
+38 silly install resolved     dist:
+38 silly install resolved      { shasum: '29ac6549f15a65b19f3444a4178d537a8c161a8b',
+38 silly install resolved        tarball: 'http://registry.npmjs.org/socket/-/socket-0.0.1.tgz' },
+38 silly install resolved     maintainers: [ [Object] ],
+38 silly install resolved     directories: {},
+38 silly install resolved     _shasum: '29ac6549f15a65b19f3444a4178d537a8c161a8b',
+38 silly install resolved     _resolved: 'https://registry.npmjs.org/socket/-/socket-0.0.1.tgz',
+38 silly install resolved     _from: 'socket@*',
+38 silly install resolved     bugs: { url: 'https://github.com/capecodehq/socket/issues' },
+38 silly install resolved     readme: 'ERROR: No README data found!',
+38 silly install resolved     homepage: 'https://github.com/capecodehq/socket#readme' } ]
+39 info install socket@0.0.1 into /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano
+40 info installOne socket@0.0.1
+41 verbose installOne of socket to /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano not in flight; installing
+42 verbose lock using /Users/tyw/.npm/_locks/socket-74e36b8676b4b04f.lock for /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano/node_modules/socket
+43 warn engine socket@0.0.1: wanted: {"node":">= 0.6.0 < 0.7.0"} (current: {"node":"4.2.3","npm":"2.14.7"})
+44 silly install write writing socket 0.0.1 to /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano/node_modules/socket
+45 verbose unbuild node_modules/socket
+46 silly gentlyRm /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano/node_modules/socket is being purged from base /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano
+47 verbose gentlyRm don't care about contents; nuking /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano/node_modules/socket
+48 verbose tar unpack /Users/tyw/.npm/socket/0.0.1/package.tgz
+49 verbose tar unpacking to /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano/node_modules/socket
+50 silly gentlyRm /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano/node_modules/socket is being purged
+51 verbose gentlyRm don't care about contents; nuking /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano/node_modules/socket
+52 silly gunzTarPerm modes [ '755', '644' ]
+53 silly gunzTarPerm extractEntry examples/
+54 silly gunzTarPerm extractEntry examples/echo-server.js
+55 silly gunzTarPerm extractEntry examples/simple-test.js
+56 silly gunzTarPerm extractEntry examples/simple-time-server.js
+57 silly gunzTarPerm extractEntry index.js
+58 silly gunzTarPerm extractEntry lib/
+59 silly gunzTarPerm extractEntry lib/index.js
+60 silly gunzTarPerm extractEntry lib/middleware/
+61 silly gunzTarPerm extractEntry lib/middleware/echo.js
+62 silly gunzTarPerm extractEntry lib/middleware/errorHandler.js
+63 silly gunzTarPerm extractEntry lib/middleware/json.js
+64 silly gunzTarPerm extractEntry lib/middleware/profiler.js
+65 silly gunzTarPerm extractEntry lib/proto.js
+66 silly gunzTarPerm extractEntry lib/utils.js
+67 silly gunzTarPerm extractEntry nbproject/
+68 silly gunzTarPerm extractEntry nbproject/private/
+69 silly gunzTarPerm extractEntry nbproject/private/private.properties
+70 silly gunzTarPerm extractEntry nbproject/project.properties
+71 silly gunzTarPerm extractEntry nbproject/project.xml
+72 silly gunzTarPerm extractEntry package.json
+73 silly gunzTarPerm extractEntry scripts/
+74 silly gunzTarPerm extractEntry scripts/lint
+75 verbose write writing to /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano/node_modules/socket/package.json
+76 info preinstall socket@0.0.1
+77 verbose readDependencies loading dependencies from /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano/node_modules/socket/package.json
+78 silly prepareForInstallMany adding microtime@=0.2.0 from socket dependencies
+79 verbose readDependencies loading dependencies from /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano/node_modules/socket/package.json
+80 silly cache add args [ 'microtime@=0.2.0', null ]
+81 verbose cache add spec microtime@=0.2.0
+82 silly cache add parsed spec Result {
+82 silly cache add   raw: 'microtime@=0.2.0',
+82 silly cache add   scope: null,
+82 silly cache add   name: 'microtime',
+82 silly cache add   rawSpec: '=0.2.0',
+82 silly cache add   spec: '0.2.0',
+82 silly cache add   type: 'version' }
+83 silly addNamed microtime@0.2.0
+84 verbose addNamed "0.2.0" is a plain semver version for microtime
+85 silly mapToRegistry name microtime
+86 silly mapToRegistry using default registry
+87 silly mapToRegistry registry https://registry.npmjs.org/
+88 silly mapToRegistry uri https://registry.npmjs.org/microtime
+89 verbose addNameVersion registry:https://registry.npmjs.org/microtime not in flight; fetching
+90 verbose request uri https://registry.npmjs.org/microtime
+91 verbose request no auth needed
+92 info attempt registry request try #1 at 1:42:35 PM
+93 verbose etag "643BDRJSWF8XK731HA0S1NGN2"
+94 http request GET https://registry.npmjs.org/microtime
+95 http 304 https://registry.npmjs.org/microtime
+96 verbose headers { date: 'Wed, 03 Feb 2016 18:42:35 GMT',
+96 verbose headers   via: '1.1 varnish',
+96 verbose headers   'cache-control': 'max-age=300',
+96 verbose headers   etag: '"643BDRJSWF8XK731HA0S1NGN2"',
+96 verbose headers   age: '32',
+96 verbose headers   connection: 'keep-alive',
+96 verbose headers   'x-served-by': 'cache-atl6233-ATL',
+96 verbose headers   'x-cache': 'HIT',
+96 verbose headers   'x-cache-hits': '1',
+96 verbose headers   'x-timer': 'S1454524955.651856,VS0,VE0',
+96 verbose headers   vary: 'Accept' }
+97 silly get cb [ 304,
+97 silly get   { date: 'Wed, 03 Feb 2016 18:42:35 GMT',
+97 silly get     via: '1.1 varnish',
+97 silly get     'cache-control': 'max-age=300',
+97 silly get     etag: '"643BDRJSWF8XK731HA0S1NGN2"',
+97 silly get     age: '32',
+97 silly get     connection: 'keep-alive',
+97 silly get     'x-served-by': 'cache-atl6233-ATL',
+97 silly get     'x-cache': 'HIT',
+97 silly get     'x-cache-hits': '1',
+97 silly get     'x-timer': 'S1454524955.651856,VS0,VE0',
+97 silly get     vary: 'Accept' } ]
+98 verbose etag https://registry.npmjs.org/microtime from cache
+99 verbose get saving microtime to /Users/tyw/.npm/registry.npmjs.org/microtime/.cache.json
+100 silly cache afterAdd microtime@0.2.0
+101 verbose afterAdd /Users/tyw/.npm/microtime/0.2.0/package/package.json not in flight; writing
+102 verbose afterAdd /Users/tyw/.npm/microtime/0.2.0/package/package.json written
+103 silly install resolved [ { name: 'microtime',
+103 silly install resolved     version: '0.2.0',
+103 silly install resolved     description: 'Get the current time in microseconds',
+103 silly install resolved     author:
+103 silly install resolved      { name: 'Wade Simmons',
+103 silly install resolved        email: 'wade@wades.im',
+103 silly install resolved        url: 'http://wades.im/mons' },
+103 silly install resolved     homepage: 'https://github.com/wadey/node-microtime',
+103 silly install resolved     repository:
+103 silly install resolved      { type: 'git',
+103 silly install resolved        url: 'git://github.com/wadey/node-microtime.git' },
+103 silly install resolved     main: './index',
+103 silly install resolved     engines: { node: '>= 0.2.0' },
+103 silly install resolved     scripts: { install: 'node-waf configure build', test: 'node test.js' },
+103 silly install resolved     _npmUser: { name: 'wadey', email: 'wade@wades.im' },
+103 silly install resolved     _id: 'microtime@0.2.0',
+103 silly install resolved     dependencies: {},
+103 silly install resolved     devDependencies: {},
+103 silly install resolved     _engineSupported: true,
+103 silly install resolved     _npmVersion: '1.0.103',
+103 silly install resolved     _nodeVersion: 'v0.4.11',
+103 silly install resolved     _defaultsLoaded: true,
+103 silly install resolved     dist:
+103 silly install resolved      { shasum: '45ee5cb061f9948a3ade221e620d5117a8a2bdb4',
+103 silly install resolved        tarball: 'http://registry.npmjs.org/microtime/-/microtime-0.2.0.tgz' },
+103 silly install resolved     maintainers: [ [Object] ],
+103 silly install resolved     directories: {},
+103 silly install resolved     _shasum: '45ee5cb061f9948a3ade221e620d5117a8a2bdb4',
+103 silly install resolved     _resolved: 'https://registry.npmjs.org/microtime/-/microtime-0.2.0.tgz',
+103 silly install resolved     _from: 'microtime@0.2.0',
+103 silly install resolved     bugs: { url: 'https://github.com/wadey/node-microtime/issues' },
+103 silly install resolved     readme: 'ERROR: No README data found!' } ]
+104 info install microtime@0.2.0 into /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano/node_modules/socket
+105 info installOne microtime@0.2.0
+106 verbose installOne of microtime to /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano/node_modules/socket not in flight; installing
+107 verbose lock using /Users/tyw/.npm/_locks/microtime-ee3a30dc96f7b414.lock for /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano/node_modules/socket/node_modules/microtime
+108 silly install write writing microtime 0.2.0 to /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano/node_modules/socket/node_modules/microtime
+109 verbose unbuild node_modules/socket/node_modules/microtime
+110 silly gentlyRm /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano/node_modules/socket/node_modules/microtime is being purged from base /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano
+111 verbose gentlyRm don't care about contents; nuking /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano/node_modules/socket/node_modules/microtime
+112 verbose tar unpack /Users/tyw/.npm/microtime/0.2.0/package.tgz
+113 verbose tar unpacking to /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano/node_modules/socket/node_modules/microtime
+114 silly gentlyRm /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano/node_modules/socket/node_modules/microtime is being purged
+115 verbose gentlyRm don't care about contents; nuking /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano/node_modules/socket/node_modules/microtime
+116 silly gunzTarPerm modes [ '755', '644' ]
+117 silly gunzTarPerm extractEntry index.js
+118 silly gunzTarPerm extractEntry LICENSE
+119 silly gunzTarPerm extractEntry package.json
+120 silly gunzTarPerm extractEntry README.md
+121 silly gunzTarPerm extractEntry test.js
+122 silly gunzTarPerm extractEntry wscript
+123 silly gunzTarPerm extractEntry src/microtime.cc
+124 verbose write writing to /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano/node_modules/socket/node_modules/microtime/package.json
+125 info preinstall microtime@0.2.0
+126 verbose readDependencies loading dependencies from /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano/node_modules/socket/node_modules/microtime/package.json
+127 verbose readDependencies loading dependencies from /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano/node_modules/socket/node_modules/microtime/package.json
+128 silly install resolved []
+129 verbose about to build /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano/node_modules/socket/node_modules/microtime
+130 info build /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano/node_modules/socket/node_modules/microtime
+131 info linkStuff microtime@0.2.0
+132 silly linkStuff microtime@0.2.0 has /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano/node_modules/socket/node_modules as its parent node_modules
+133 verbose linkBins microtime@0.2.0
+134 verbose linkMans microtime@0.2.0
+135 verbose rebuildBundles microtime@0.2.0
+136 info install microtime@0.2.0
+137 verbose unsafe-perm in lifecycle true
+138 info microtime@0.2.0 Failed to exec install script
+139 verbose unlock done using /Users/tyw/.npm/_locks/microtime-ee3a30dc96f7b414.lock for /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano/node_modules/socket/node_modules/microtime
+140 verbose about to build /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano/node_modules/socket
+141 verbose unlock done using /Users/tyw/.npm/_locks/socket-74e36b8676b4b04f.lock for /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano/node_modules/socket
+142 verbose stack Error: microtime@0.2.0 install: `node-waf configure build`
+142 verbose stack spawn ENOENT
+142 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:17:16)
+142 verbose stack     at emitTwo (events.js:87:13)
+142 verbose stack     at ChildProcess.emit (events.js:172:7)
+142 verbose stack     at maybeClose (internal/child_process.js:818:16)
+142 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+143 verbose pkgid microtime@0.2.0
+144 verbose cwd /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano
+145 error Darwin 14.3.0
+146 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "--save" "socket"
+147 error node v4.2.3
+148 error npm  v2.14.7
+149 error file sh
+150 error code ELIFECYCLE
+151 error errno ENOENT
+152 error syscall spawn
+153 error microtime@0.2.0 install: `node-waf configure build`
+153 error spawn ENOENT
+154 error Failed at the microtime@0.2.0 install script 'node-waf configure build'.
+154 error This is most likely a problem with the microtime package,
+154 error not with npm itself.
+154 error Tell the author that this fails on your system:
+154 error     node-waf configure build
+154 error You can get their info via:
+154 error     npm owner ls microtime
+154 error There is likely additional logging output above.
+155 verbose exit [ 1, true ]
+156 verbose unbuild node_modules/socket/node_modules/microtime
+157 info preuninstall microtime@0.2.0
+158 info uninstall microtime@0.2.0
+159 verbose unbuild rmStuff microtime@0.2.0 from /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano/node_modules
+160 verbose unbuild rmStuff in /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano/node_modules/socket/node_modules
+161 info postuninstall microtime@0.2.0
+162 silly gentlyRm /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano/node_modules/socket/node_modules/microtime is being purged from base /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano
+163 verbose gentlyRm don't care about contents; nuking /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano/node_modules/socket/node_modules/microtime
+164 silly vacuum-fs purging /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano/node_modules/socket/node_modules/microtime
+165 silly vacuum-fs removing /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano/node_modules/socket/node_modules
+166 silly vacuum-fs quitting because other entries in /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano/node_modules/socket
+167 verbose unbuild node_modules/socket
+168 info preuninstall socket@0.0.1
+169 info uninstall socket@0.0.1
+170 verbose unbuild rmStuff socket@0.0.1 from /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano/node_modules
+171 info postuninstall socket@0.0.1
+172 silly gentlyRm /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano/node_modules/socket is being purged from base /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano
+173 verbose gentlyRm don't care about contents; nuking /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano/node_modules/socket
+174 silly vacuum-fs purging /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano/node_modules/socket
+175 silly vacuum-fs quitting because other entries in /Users/tyw/Desktop/nodebots_nyc/febExamples/socket_piano/node_modules

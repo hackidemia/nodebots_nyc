@@ -8,6 +8,7 @@ var five = require("johnny-five");
 var board = new five.Board();
 //var swtch;
 var btn;
+var btn2
 var led;
 
 // Express Code
@@ -25,11 +26,13 @@ http.listen(3333, function(){
 board.on("ready", function() {
   led = new five.Led(13);
   //swtch = new five.Switch(7);
-  btn1 = new five.Button({
+  btn = new five.Button({
     pin: 7, 
     isPullup: true,
     holdtime: 100
   });
+
+
 
   btn2 = new five.Button({
     pin: 9,
@@ -37,12 +40,12 @@ board.on("ready", function() {
     holdtime: 100
   })
 
-  btn1.on("hold", function() {
+  btn.on("hold", function() {
     led.on();
     io.emit('Cpress');
   });
 
-  btn1.on("release", function() {
+  btn.on("release", function() {
     led.off();
     io.emit('Crelease');
   });
@@ -57,65 +60,65 @@ board.on("ready", function() {
     io.emit('Drelease');
   });
 
-  btn3.on("hold", function() {
-    led.on();
-    io.emit('Epress');
-  });
+//   btn3.on("hold", function() {
+//     led.on();
+//     io.emit('Epress');
+//   });
 
-  btn3.on("release", function() {
-    led.off();
-    io.emit('Erelease');
-  });
+//   btn3.on("release", function() {
+//     led.off();
+//     io.emit('Erelease');
+//   });
 
-  btn4.on("hold", function() {
-    led.on();
-    io.emit('Fpress');
-  });
+//   btn4.on("hold", function() {
+//     led.on();
+//     io.emit('Fpress');
+//   });
 
-  btn4.on("release", function() {
-    led.off();
-    io.emit('Frelease');
-  });
+//   btn4.on("release", function() {
+//     led.off();
+//     io.emit('Frelease');
+//   });
 
-  btn5.on("hold", function() {
-    led.on();
-    io.emit('Gpress');
-  });
+//   btn5.on("hold", function() {
+//     led.on();
+//     io.emit('Gpress');
+//   });
 
-  btn5.on("release", function() {
-    led.off();
-    io.emit('Grelease');
-  });
+//   btn5.on("release", function() {
+//     led.off();
+//     io.emit('Grelease');
+//   });
 
-  btn6.on("hold", function() {
-    led.on();
-    io.emit('Apress');
-  });
+//   btn6.on("hold", function() {
+//     led.on();
+//     io.emit('Apress');
+//   });
 
-  btn6.on("release", function() {
-    led.off();
-    io.emit('Arelease');
-  });
+//   btn6.on("release", function() {
+//     led.off();
+//     io.emit('Arelease');
+//   });
 
-  btn7.on("hold", function() {
-    led.on();
-    io.emit('Bpress');
-  });
+//   btn7.on("hold", function() {
+//     led.on();
+//     io.emit('Bpress');
+//   });
 
-  btn7.on("release", function() {
-    led.off();
-    io.emit('Brelease');
-  });
+//   btn7.on("release", function() {
+//     led.off();
+//     io.emit('Brelease');
+//   });
 
-  btn8.on("hold", function() {
-    led.on();
-    io.emit('C2press');
-  });
+//   btn8.on("hold", function() {
+//     led.on();
+//     io.emit('C2press');
+//   });
 
-  btn8.on("release", function() {
-    led.off();
-    io.emit('C2release');
-  });
+//   btn8.on("release", function() {
+//     led.off();
+//     io.emit('C2release');
+//   });
 
 });
 
