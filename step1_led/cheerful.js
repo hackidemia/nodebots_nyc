@@ -4,8 +4,8 @@
 
 var request = require("request"),
     five = require("johnny-five"),
-    colorMap = require("./cheerlights-colors"),
-    board,
+    colorMap = require("./cheerlights_colors.js"),
+    board = new five.Board(),
     pins;
 
 board.on("ready", function() {
