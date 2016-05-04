@@ -16,7 +16,7 @@ myBoard.on("ready", function() {
         }
     });
 
-    var pmeter = new five.Sensor("A0");
+    var pmeter = new five.Sensor("A3");
 
     pmeter.on("change", function() {
         console.log("The value of the potentiometer is:" +this.value );

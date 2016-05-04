@@ -4,7 +4,7 @@
 
 var request = require("request"),
     five = require("johnny-five"),
-    colorMap = require("./cheerlights-colors"),
+    colorMap = require("./cheerlights_colors"),
     board,
     pins;
 
